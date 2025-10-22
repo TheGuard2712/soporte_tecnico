@@ -1,0 +1,147 @@
+{
+  "info": {
+    "name": "API Soporte Técnico (Java 21 + MySQL)",
+    "_postman_id": "aaaa-bbbb-cccc",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Clientes - Listar",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Clientes - Crear",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\":\"Empresa ABC\",\"email\":\"abc@empresa.com\",\"telefono\":\"999888777\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/clientes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "clientes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Técnicos - Listar",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/tecnicos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tecnicos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Técnicos - Crear",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\":\"Luis García\",\"especialidad\":\"Redes\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tecnicos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tecnicos"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Solicitudes - Listar",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Solicitudes - Crear (mínimo)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"titulo\": \"Impresora sin papel\",\n  \"clienteId\": 1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/solicitudes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "solicitudes"
+          ]
+        }
+      }
+    }
+  ]
+}
