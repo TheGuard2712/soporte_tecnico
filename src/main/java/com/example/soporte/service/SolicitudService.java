@@ -12,3 +12,5 @@ public interface SolicitudService {
     List<Solicitud> listar();
     List<Solicitud> listarPorEstado(EstadoSolicitud estado);
 }
+
+// Ajuste menor realizado por Rivaldo para commit (;)
