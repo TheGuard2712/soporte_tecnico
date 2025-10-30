@@ -3,6 +3,7 @@ package com.example.soporte.dto;
 import com.example.soporte.model.EstadoSolicitud;
 import com.example.soporte.model.Prioridad;
 
+// crear dto para clientrequest y tecniorequests
 public record SolicitudRequest(
     String titulo,
     String descripcion,
