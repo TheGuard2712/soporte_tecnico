@@ -1,4 +1,4 @@
-##Descrpcion del proyecto 
+## Descrpcion del proyecto 
 La empresa de servicios tecnológicos necesita registrar las solicitudes de
 soporte técnico de sus clientes. Actualmente el proceso es manual, lo que
 genera pérdidas de información y retrasos. Por ello, el equipo desarrolló una
@@ -27,6 +27,12 @@ mvn spring-boot:run
 - Swagger UI: http://localhost:8080/swagger-ui/index.html
 - con el url podemos entrar a Swagger UI y ver los registros que estan en postman
 
+## Postman 
+HTTP para poder conectarnos al postman
+- http://localhost:8080/api/clientes
+- http://localhost:8080/api/tecnicos
+- http://localhost:8080/api/solicitudes
+  
 ## Endpoints
 - Clientes: GET/POST/PUT/DELETE /api/clientes
 - Técnicos: GET/POST/PUT/DELETE /api/tecnicos
