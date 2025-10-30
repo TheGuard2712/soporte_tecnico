@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+// todo: usar responseEntity
 @RestController
 @RequestMapping("/api/solicitudes")
 public class SolicitudController {

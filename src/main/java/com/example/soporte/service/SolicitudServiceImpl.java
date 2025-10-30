@@ -20,6 +20,7 @@ public class SolicitudServiceImpl implements SolicitudService {
 
     @Override
     public Solicitud crear(Solicitud s, Long clienteId, Long tecnicoId) {
+        // todo: no es ncesario este if si el model ya tiene anotado una validacion
         if (s.getTitulo()==null || s.getTitulo().isBlank()) throw new IllegalArgumentException("El título es obligatorio");
         if (clienteId==null) throw new IllegalArgumentException("clienteId es obligatorio");
 

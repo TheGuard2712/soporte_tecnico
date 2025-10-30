@@ -7,6 +7,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+// todo: usar ResponseEntity
+// todo: agregar un endpoint para listar todas las solicitudes pendientes de un cliente
+// todo: revisar Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/json;charset=UTF-8' is not supported]
 @RestController
 @RequestMapping("/api/clientes")
 public class ClienteController {
