@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 
 @Entity
 public class Tecnico {
@@ -21,7 +21,8 @@ public class Tecnico {
     private String especialidad;
 
     @OneToMany(mappedBy = "tecnico")
-    @JsonManagedReference
+    @com.fasterxml.jackson.annotation.JsonIgnore
+    @io.swagger.v3.oas.annotations.media.Schema(hidden = true)
     private List<Solicitud> solicitudes = new ArrayList<>();
 
     public Long getId() { return id; }

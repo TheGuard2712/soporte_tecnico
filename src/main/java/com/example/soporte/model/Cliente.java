@@ -26,7 +26,8 @@ public class Cliente {
     private String telefono;
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonManagedReference
+    @com.fasterxml.jackson.annotation.JsonIgnore
+    @io.swagger.v3.oas.annotations.media.Schema(hidden = true)
     private List<Solicitud> solicitudes = new ArrayList<>();
 
     public Long getId() { return id; }
